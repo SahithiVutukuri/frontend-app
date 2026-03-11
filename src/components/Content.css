@@ -1,0 +1,14 @@
+.row{
+    display: flex;
+
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+
+
+.box{
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
