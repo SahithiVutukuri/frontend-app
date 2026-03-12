@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Content.css"
 
 const API_URL = import.meta.env.VITE_API_URL
+
 function Content() {
   // const [count, setCount] = useState(0);
   const [products, setProducts] = useState([]);
@@ -22,19 +23,19 @@ function Content() {
   }, []);
   return (
     <div>
-  
+     
       {/* <button onClick={decrement}>-</button>
       {count}
       <button onClick={increment}>+</button>
       <hr /> */}
       <div className="row">
         {products.map((product) => (
-          <div className = "box">
-            <img src ={`${API_URL}/${product.imageUrl}`}width = "300px" alt=""/>
+          <div className="box">
+            <img src={`${API_URL}/${product.imageUrl}`} width="300px" alt="" />
             <h3>{product.name}</h3>
-            <p> {product.desc}</p>
+            <p>{product.desc}</p>
             <h4>{product.price}</h4>
-            <p><button>Add To Cart</button></p>
+            <p><button>Add to Cart</button></p>
           </div>
         ))}
       </div>
